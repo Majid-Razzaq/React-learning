@@ -1,7 +1,11 @@
+import { Container } from "react-bootstrap";
+
 function Footer() {
     return (
-        <footer className="footer">
-            <p>© 2026 React Learning. All rights reserved.</p>
+        <footer className="bg-dark text-white py-4 mt-auto">
+            <Container className="text-center">
+                © 2026 React Starter
+            </Container>
         </footer>
     );
 }

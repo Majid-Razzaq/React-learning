@@ -1,17 +1,39 @@
-function Navbar() {
-    return (
-        <header className="navbar">
-            <div className="container">
-                <h1>React App</h1>
+import { Container, Nav, Navbar } from "react-bootstrap";
 
-                <nav>
-                    <a href="/">Home</a>
-                    <a href="/about">About</a>
-                    <a href="/contact">Contact</a>
-                </nav>
-            </div>
-        </header>
+function AppNavbar() {
+    return (
+        <Navbar bg="white" expand="lg" className="shadow-sm py-3">
+            <Container>
+
+                <Navbar.Brand className="fw-bold">
+                    React Starter
+                </Navbar.Brand>
+
+                <Navbar.Toggle />
+
+                <Navbar.Collapse>
+
+                    <Nav className="ms-auto">
+
+                        <Nav.Link href="/">
+                            Home
+                        </Nav.Link>
+
+                        <Nav.Link href="/">
+                            About
+                        </Nav.Link>
+
+                        <Nav.Link href="/">
+                            Contact
+                        </Nav.Link>
+
+                    </Nav>
+
+                </Navbar.Collapse>
+
+            </Container>
+        </Navbar>
     );
 }
 
-export default Navbar;
+export default AppNavbar;
